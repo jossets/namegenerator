@@ -15,7 +15,7 @@ def gen_random_name():
     if name.startswith("#"):
         gen_random_name()
     else:
-        print name.lower()
+        return name.lower()
     
     
 def gen_random_surname():
@@ -30,7 +30,7 @@ def gen_random_surname():
     if name.startswith("#"):
         gen_random_name()
     else:
-        print name.lower()
+        return name.lower()
     
 
 
@@ -39,9 +39,9 @@ def my_main():
     if len(sys.argv)>1:
         cmd = sys.argv[1]
     if (cmd == 'name'):
-        gen_random_name()
+        print gen_random_name()
     if cmd == 'surname':
-        gen_random_surname()
+        print gen_random_surname()
 
         
 
